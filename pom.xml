@@ -23,32 +23,7 @@
 	</dependencies>
 
 
-    <plugin>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-codegen-plugin</artifactId>
-        <version>${cxf.version}</version>
-        <executions>
-            <execution>
-                <id>generate-sources</id>
-                <phase>generate-sources</phase>
-                <configuration>
-                    <sourceRoot>${project.build.directory}/generated-sources/cxf</sourceRoot>
-                    <wsdlOptions>
-                        <wsdlOption>
-                            <wsdl>${basedir}/src/main/resources/wsdl/myService.wsdl</wsdl>
-                            <!-- optional extraargs, e.g. -->
-                            <extraargs>
-                                <extraarg>-verbose</extraarg>
-                            </extraargs>
-                        </wsdlOption>
-                    </wsdlOptions>
-                </configuration>
-                <goals>
-                    <goal>wsdl2java</goal>
-                </goals>
-            </execution>
-        </executions>
-    </plugin>
+
 
 
 </project>
